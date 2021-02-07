@@ -21,7 +21,7 @@
     <br />
     <label for="txt_no_telp">No. Telepon:</label>
     <br />
-    <input style="margin-bottom: 16px; width: 20%" type="txt_no_telp" placeholder="No. Telepon yang aktif" name="no_telp" />
+    <input style="margin-bottom: 16px; width: 20%" type="number" placeholder="No. Telepon yang aktif" name="no_telp" />
     <br />
     <input type="submit" name="submit" value="Simpan" />
 </form>
