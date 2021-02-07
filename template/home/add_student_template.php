@@ -9,7 +9,7 @@
     <br/>
     <label for="txt_phone_number">No. Telepon:</label>
     <br/>
-    <input style="margin-bottom: 16px; width: 20%" type="txt_phone_number" placeholder="No. Telepon yang aktif" name="phone_number"/>
+    <input style="margin-bottom: 16px; width: 20%" type="number" placeholder="No. Telepon yang aktif" name="phone_number"/>
     <br/>
     <input type="submit" name="submit" value="Simpan" />
 </form>
