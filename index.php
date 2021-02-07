@@ -5,9 +5,11 @@ require_once 'm/m.php';
 
 // Add your controllers here.
 require_once 'controller/HomeController.php';
+require_once 'controller/LecturController.php';
 
 // Here is the place for your model scripts.
 require_once 'model/StudentModel.php';
+require_once 'model/LecturModel.php';
 
 use m\Settings;
 use m\Application;
@@ -15,7 +17,7 @@ use m\Application;
 $settings = Settings::getInstance();
 
 // The app folder relative to your htdocs folder.
-$settings->setAppFolder('/MPHPFramework');
+$settings->setAppFolder('/mphpf-master');
 
 // Add your DB settings. This is not the best practice, but it is okay for now.
 $settings->setDbConnection(array(
@@ -33,7 +35,9 @@ $settings->setDbConnection(array(
 $settings->setRoute(array(
     array('/', 'Home', 'index'),
     array('/index.php', 'Home', 'index'),
-    array('/add-new-student', 'Home', 'addStudent')
+    array('/add-new-student', 'Home', 'addStudent'),
+    array('/lectur', 'Lectur', 'index'),
+    array('/add-new-lectur', 'Lectur', 'addLectur')
     // Add your other routs here...
 
     // Below are some examples of other valid routing
